@@ -10,13 +10,17 @@ import {
   MatToolbarModule,
   MatFormFieldModule,
   MatInputModule,
-  MatButtonModule
+  MatButtonModule,
+  MatListModule
 } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TodosComponent } from './todos/todos.component';
+import { NewToDoComponent } from './new-to-do/new-to-do.component';
+import { TodoComponent } from './todo/todo.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, TodosComponent, NewToDoComponent, TodoComponent],
   imports: [
     ReactiveFormsModule,
     FormsModule,
@@ -25,6 +29,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     MatInputModule,
     HttpClientModule,
     MatButtonModule,
+    MatListModule,
     MatCardModule,
     MatSelectModule,
     MatFormFieldModule,
